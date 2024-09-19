@@ -18,10 +18,10 @@ This project is designed to automate and optimize the management of MySQL databa
 
 **1. Clone the Repository**
 
-    ```bash
-    git clone https://github.com/Anupam912/mysql_db_manager.git
-    cd mysql_db_manager
-    ```
+```bash
+git clone https://github.com/Anupam912/mysql_db_manager.git
+cd mysql_db_manager
+```
 
 **2. Install Prerequisites**
 
