@@ -32,7 +32,7 @@ This project is designed to automate and optimize the management of MySQL databa
 
 ## Configuration
 
-###Temporary Changes (using SET GLOBAL in MySQL)**
+###Temporary Changes (using SET GLOBAL in MySQL)
 
 Log into MySQL using the command line
 
