@@ -1,0 +1,1 @@
+*/5 * * * * /path/to/mysql_db_manager/security/query_rate_limit.sh

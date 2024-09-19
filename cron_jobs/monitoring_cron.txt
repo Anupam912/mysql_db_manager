@@ -1,0 +1,4 @@
+*/30 * * * * /usr/bin/python3 /path/to/db_scale.py
+*/5 * * * * /path/to/db_monitor.sh
+0 3 * * * /path/to/mysql_db_manager/monitoring/analyze_slow_queries.sh
+0 4 * * * /path/to/mysql_db_manager/monitoring/cache_monitor.sh

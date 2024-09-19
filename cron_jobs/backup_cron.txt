@@ -1,0 +1,3 @@
+0 2 * * * /path/to/full_backup.sh
+0 3 * * * /path/to/incremental_backup.sh
+0 2 * * * /path/to/mysql_db_manager/backup/backup_to_cloud.sh
