@@ -32,7 +32,7 @@ This project is designed to automate and optimize the management of MySQL databa
 
 ## Configuration
 
-###Temporary Changes (using SET GLOBAL in MySQL)
+### Temporary Changes (using SET GLOBAL in MySQL)
 
 Log into MySQL using the command line
 
@@ -59,28 +59,30 @@ SET GLOBAL max_connections = 500;
 SET GLOBAL innodb_buffer_pool_size = 1G;
 ```
 
-###Permanent Changes (Edit my.cnf)
+#### Permanent Changes (Edit my.cnf)
 **1. Locate the MySQL configuration file:**
     - On most systems, it's located at /etc/mysql/mysql.conf.d/mysqld.cnf.
 **2. Edit the file:**
 
-    ```bash
-    sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-    ```
+```bash
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
 **3. Add the following lines under the [mysqld] section:**
 
-    ```ini
-    [mysqld]
-    query_cache_size = 64M
-    query_cache_type = 1
-    max_connections = 500
-    innodb_buffer_pool_size = 1G
-    ```
+```ini
+[mysqld]
+query_cache_size = 64M
+query_cache_type = 1
+max_connections = 500
+innodb_buffer_pool_size = 1G
+```
+    
 **4. Restart MySQL to apply the changes:**
 
-    ```bash
-    sudo systemctl restart mysql
-    ```
+```bash
+sudo systemctl restart mysql
+```
 
 ## Usage Instructions
 
@@ -116,6 +118,7 @@ SET GLOBAL innodb_buffer_pool_size = 1G;
         slow_query_log_file = /var/log/mysql/slow-queries.log
         long_query_time = 2   
         ```
+
     3. Restart MySQL to apply the changes:
 
         ```bash
